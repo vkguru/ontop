@@ -1,9 +1,18 @@
 <template>
-  <div></div>
+  <div>
+    
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {},
 }
 </script>
+
+<style lang="scss" scoped>
+div {
+  color: $ot-black;
+}
+</style>

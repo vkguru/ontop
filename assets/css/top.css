@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy Regular", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("assets/fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik TRIAL Bold";
+  src: url("assets/fonts/Aeonik/AeonikTRIAL-Bold.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonik TRIAL Regular";
+  src: url("assets/fonts/Aeonik/AeonikTRIAL-Regular.otf") format("opentype");
+  font-style: normal;
+}
+
+body {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Aeonik TRIAL Bold", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 1rem;
+}
+
+.ot-container {
+  max-width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1400px) {
+  .ot-container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .ot-container {
+    max-width: 1600px;
+  }
+}
