@@ -1,19 +1,36 @@
 <template>
     <footer>
-        <div class="ft-brand">
-            <img src="~/assets/img/logo-white.png" alt="ontop builders logo" />
-            <p>We deliver projects that defies all limitations</p>
-        </div>
-        <div class="ft-info">
-            <div class="_link">
-                <ul>
-                    <li><router-link to="/">Our Services</router-link></li>
-                    <li><router-link to="/">Portfolio</router-link></li>
-                    <li><router-link to="/">About Us</router-link></li>
-                    <li><router-link to="/">Contact Us</router-link></li>
-                </ul>
+        <div class="ft">
+            <div class="ft-brand">
+                <img src="~/assets/img/logo-white.png" alt="ontop builders logo" />
+                <p>We deliver projects that defies all limitations</p>
             </div>
-            <div class=""></div>
+            <div class="ft-info">
+                <div class="_link">
+                    <ul>
+                        <li><router-link to="/">Our Services</router-link></li>
+                        <li><router-link to="/">Portfolio</router-link></li>
+                        <li><router-link to="/">About Us</router-link></li>
+                        <li><router-link to="/">Contact Us</router-link></li>
+                    </ul>
+                </div>
+                <div class="_details">
+                    <div class="col">
+                        <h4>Office Address:</h4>
+                        <p>Suite 29 LSDPC office complex phase 3, oba ogunji road, ogba ikeja. Lagos</p>
+                    </div>
+
+                    <div class="col">
+                        <h4>Contact:</h4>
+                        <a href="tel:+2348032836675">+234 803 283 6675</a>
+                    </div>
+
+                    <div class="col">
+                        <h4>Email:</h4>
+                        <a href="mailto:ontopbuilders@gmail.com">ontopbuilders@gmail.com</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </template>
@@ -26,6 +43,64 @@ export default {
 
 <style lang="scss" scoped>
 footer {
+    width: 100%;
     background-color: $ot-black;
+}
+
+.ft {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 3rem 0.9rem;
+    color: $ot-white;
+    column-gap: 253px;
+}
+
+.ft-brand {
+    p {
+        padding-right: 30px;
+        padding-top: 19px;
+    }
+}
+
+.ft-info {
+    display: flex;
+    flex-direction: column;
+
+    ._link {
+        width: 500px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+
+                a {
+                    color: $ot-white;
+                }
+            }
+        }
+    }
+
+    ._details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.5rem;
+        margin-top: 53px;
+
+        .col {
+            padding-right: 80px;
+
+            h4 {
+                font-family: "Gilroy Medium", sans-serif;
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+
+            a {
+                color: $ot-white;
+            }
+        }
+    }
 }
 </style>

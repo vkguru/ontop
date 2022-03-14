@@ -44,7 +44,7 @@ header {
 .navbar {
     width: 90%;
     max-width: 100%;
-    padding: 2rem 0.9rem;
+    padding: 2rem 0.9rem 1rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
