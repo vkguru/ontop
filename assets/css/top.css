@@ -33,7 +33,7 @@
 }
 
 @font-face {
-  font-family: "Aeonik TRIAL Regular";
+  font-family: "Aeonik TRIAL";
   src: url("assets/fonts/Aeonik/AeonikTRIAL-Regular.otf") format("opentype");
   font-style: normal;
 }
@@ -63,6 +63,10 @@ ul {
 
 ul li {
   font-size: 1rem;
+}
+
+section {
+  width: 100%;
 }
 
 .ot-container {

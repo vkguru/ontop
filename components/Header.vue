@@ -67,10 +67,16 @@ header {
                 color: $ot-red;
                 padding: 12px 24px;
                 margin-left: 15px;
-                background-color: #FFFFFF;
+                background-color: $ot-white;
                 border: 1px solid $ot-red;
                 box-sizing: border-box;
                 border-radius: 4px;
+
+                &:hover {
+                    background-color: $ot-red;
+                    color: $ot-white;
+                    border: 1px solid $ot-red;
+                }
             }
         }
     }
