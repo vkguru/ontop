@@ -38,6 +38,13 @@
             </div>
         </section>
 
+        <section class="deliver">
+            <div class="_inner">
+                <h2>Yes, <span>We deliver</span></h2>
+                <p>We are an emerging firm armed with state of the art equipment, 21st century expertise coupled with a high level of intellectual compatibility and tactically proficiency. We possess a deep sense of commitment and first class customer orientation nationally and internationally.</p>
+            </div>
+        </section>
+
         <section>
             <PreFooter />
         </section>
@@ -152,6 +159,37 @@ export default {
     & p {
         font-size: 18px;
         line-height: 29px;
+    }
+}
+
+.deliver {
+    background-image: url('../assets/img/deliver.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 150px 100px;
+    margin-top: 100px;
+    height: 600px;
+
+    & ._inner {
+        max-width: 693px;
+        transform: translateY(50px);
+
+        & h2 {
+            font-size: 60px;
+            font-family: "Aeonik TRIAL";
+            font-weight: 400;
+            margin-bottom: 50px;
+
+            & span {
+                font-family: "Aeonik TRIAL Bold";
+            }
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 36px;
+        }
     }
 }
 </style>

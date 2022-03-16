@@ -67,9 +67,9 @@ header {
     }
 }
 
-@media screen and (min-width: 1448px) {
-    .works {
-        // max-width: 1200px;
-    }
-}
+// @media screen and (min-width: 1448px) {
+//     .works {
+//         // max-width: 1200px;
+//     }
+// }
 </style>
