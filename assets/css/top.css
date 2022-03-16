@@ -74,6 +74,40 @@ section {
   margin: auto;
 }
 
+.ot-cta {
+  color: #9b0000;
+  padding: 12px 24px;
+  border: 1px solid #9b0000;
+  border-radius: 4px;
+  font-family: "Gilroy Medium";
+  transition: 0.3s ease-in-out;
+}
+
+.ot-cta:hover {
+  background-color: #9b0000;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.ot-cta_deep {
+  background-color: #9b0000;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: 1px solid #9b0000;
+  border-radius: 4px;
+  font-family: "Gilroy Medium";
+  transition: 0.3s ease-in-out;
+}
+
+.ot-cta_deep:hover {
+  background-color: #ffffff;
+  color: #9b0000;
+}
+
+.flex {
+  display: flex;
+}
+
 @media screen and (min-width: 1400px) {
   .ot-container {
     max-width: 1200px;

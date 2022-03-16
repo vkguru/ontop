@@ -15,7 +15,7 @@
       <div class="_inner">
         <h2>Who we are</h2>
         <p>We are a construction and project management company in Nigeria, which was incorporated to carry on the business of building construction, project management, construction management and facility management, design/build of first class building and other civil engineering services, consulting and general contracting services to clients in both the public and private sectors.</p>
-        <router-link to="#" class="cta">More about us</router-link>
+        <router-link to="#" class="ot-cta">More about us</router-link>
       </div>
     </section>
 
@@ -67,9 +67,60 @@
     <section class="service">
       <h2>What we do</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo turpis consequat, commodo elementum ac eu id dictum.</p>
-      <div class="_inner">
-        <ServiceCard :title="`Building construction`" />
+      <div class="_inner ot-container">
+        <ServiceCard 
+          :title="`Building construction`"
+          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :img="`building-construction.png`" 
+        />
+        <ServiceCard 
+          :title="`Roads & Drainage`"
+          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :img="`roads-drainages.png`" 
+        />
+        <ServiceCard 
+          :title="`City infrastructure & civil engineering works`"
+          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :img="`city-infrastructure.png`" 
+        />
+        <ServiceCard 
+          :title="`Architectural & structural designs`"
+          :info="`Architectural designs includes; Production of working drawing for buildings, factories, office blocks, residential apartments, hotels, schools, hostels, hospitals, landscaping services and so on.`" 
+          :img="`arch-design.png`" 
+        />
+        <ServiceCard 
+          :title="`Project management & procurement`"
+          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :img="`project-management.png`" 
+        />
+        <ServiceCard 
+          :title="`International trade Logistics`"
+          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :img="`international-logistics.png`" 
+        />
+        
+        <ServiceCard 
+          :title="`Real Estate Development`"
+          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :img="`Real-estate-development.png`" 
+        />
       </div>
+    </section>
+
+    <section class="project">
+      <header class="ot-container">
+        <div class="text">
+          <h2>Our Most Recent Projects</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo turpis consequat, commodo elementum ac eu id dictum</p>
+        </div>
+        <div class="link">
+          <router-link to="/potfolio" class="ot-cta">View all projects</router-link>
+        </div>
+      </header>
+    </section>
+
+    <section>
+      <PreFooter />
     </section>
   </div>
 </template>
@@ -91,7 +142,7 @@ export default {
 }
 
 .hero-inner {
-  padding: 15rem 0;
+  padding: 25rem 0 15rem;
   max-width: 900px;
   margin: auto;
   text-align: center;
@@ -191,6 +242,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 200px;
   }
 
   .img {
@@ -203,7 +255,7 @@ export default {
 
     #__strip {
       position: absolute;
-      top: 691px;
+      top: 415px;
       right: -130px;
       z-index: -1;
     }
@@ -248,7 +300,8 @@ export default {
 }
 
 .service {
-  padding: 100px 0;
+  padding: 150px 0;
+
   h2 {
       font-size: 30px;
       font-family: "Aeonik TRIAL";
@@ -265,5 +318,39 @@ export default {
       max-width: 870px;
       margin: auto;
     }
+
+    ._inner {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 35px;
+      grid-row-gap: 35px;
+    }
+}
+
+.project {
+  padding: 80px 0;
+  
+  & header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .text {
+      max-width: 550px;
+
+      & h2 {
+        font-family: "Aeonik TRIAL";
+        font-weight: 400;
+        padding-bottom: 16px;
+        font-size: 30px;
+      }
+    }
+
+    & .link {
+      margin-top: 50px;
+    }
+  }
 }
 </style>

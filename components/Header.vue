@@ -2,26 +2,34 @@
     <header>
         <nav class="navbar light" v-if="light">
             <div class="logo">
-                <img src="~/assets/img/logo-white.png" alt="ontop builders logo" />
+                <nuxt-link to="/">
+                    <img src="~/assets/img/logo-white.png" alt="ontop builders logo" />
+                </nuxt-link>
             </div>
             <div class="menu">
                 <ul>
-                    <li><nuxt-link to="#">Portfolio</nuxt-link></li>
-                    <li><nuxt-link to="#">About Us</nuxt-link></li>
-                    <li><nuxt-link to="#" class="_cta">Contact Us</nuxt-link></li>
+                    <li v-for="(item, index) in items" :key="index">
+                        <nuxt-link :to="item.url">{{item.menu}}</nuxt-link>
+                    </li>
+                    <li><nuxt-link to="/contact-us" class="_cta">Contact Us</nuxt-link></li>
                 </ul>
             </div>
         </nav>
 
         <nav class="navbar" v-else>
             <div class="logo">
-                <img src="~/assets/img/logo.png" alt="ontop builders logo" />
+                <nuxt-link to="/">
+                    <img src="~/assets/img/logo.png" alt="ontop builders logo" />
+                </nuxt-link>
             </div>
             <div class="menu">
                 <ul>
-                    <li><nuxt-link to="#">Portfolio</nuxt-link></li>
-                    <li><nuxt-link to="#">About Us</nuxt-link></li>
-                    <li><nuxt-link to="#" class="_cta">Contact Us</nuxt-link></li>
+                    <li v-for="(item, index) in items" :key="index">
+                        <nuxt-link :to="item.url">{{item.menu}}</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/contact-us" class="_cta">Contact Us</nuxt-link>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -31,7 +39,15 @@
 <script>
 export default {
     name: "Header",
-    props: ['light']
+    props: ['light'],
+    data() {
+        return {
+            items: [
+                {'id': 0, 'menu': 'Portfolio', 'url': '/portfolio'},
+                {'id': 1, 'menu': 'About Us', 'url': '/about-us'},
+            ]
+        }
+    }
 }
 </script>
 
@@ -67,7 +83,7 @@ header {
                 color: $ot-red;
                 padding: 12px 24px;
                 margin-left: 15px;
-                background-color: $ot-white;
+                background-color: transparent;
                 border: 1px solid $ot-red;
                 box-sizing: border-box;
                 border-radius: 4px;
