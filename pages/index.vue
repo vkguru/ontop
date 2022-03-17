@@ -70,7 +70,12 @@
 
     <section id="service">
       <h2>What we do</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo turpis consequat, commodo elementum ac eu id dictum.</p>
+      <p>
+        The strength of this company is in its ability to bring together more than 20 active individual professionals in the 
+        construction industry which includes a former project manager of a multinational company in Qatar, professional Site 
+        Engineers, Civil Engineers, Senior Architect, and Quality Surveyor, and a Chartered Accountant all with many years of 
+        experience in their chosen field. Here are our areas of expertise, and what we offer
+      </p>
       <div class="_inner ot-container">
         <ServiceCard 
           :title="`Building construction`"
@@ -121,6 +126,35 @@
           <router-link to="/portfolio" class="ot-cta">View all projects</router-link>
         </div>
       </header>
+
+      <div class="ot-container">
+        <div class="row">
+          <PreviewProjects
+            :image="`supermarket.jpg`"
+            :title="`Supermarket`"
+            :location="`Prince Ebeano supermarket`"
+          />
+
+          <PreviewProjects
+            :image="`church-building.jpg`"
+            :title="`Church building`"
+            :location="`RCCG Maryland`"
+          />
+
+          <PreviewProjects
+            :image="`estate.jpg`"
+            :title="`Estate building construction`"
+            :location="`Osborne offshore estate`"
+          />
+
+          <PreviewProjects
+            :image="`estate.jpg`"
+            :title="`Estate building construction`"
+            :location="`Osborne offshore estate`"
+          />
+          
+        </div>
+      </div>
     </section>
 
     <section>
@@ -355,6 +389,14 @@ export default {
     & .link {
       margin-top: 50px;
     }
+  }
+
+  & .row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin: 50px 0;
+    max-width: 1200px;
   }
 }
 </style>
