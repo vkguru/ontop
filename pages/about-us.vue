@@ -38,10 +38,113 @@
             </div>
         </section>
 
-        <section class="deliver">
+        <section id="deliver">
             <div class="_inner">
                 <h2>Yes, <span>We deliver</span></h2>
                 <p>We are an emerging firm armed with state of the art equipment, 21st century expertise coupled with a high level of intellectual compatibility and tactically proficiency. We possess a deep sense of commitment and first class customer orientation nationally and internationally.</p>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="ot-container">
+                <header>
+                    <h2>Our Team</h2>
+                    <p>The strength of this company is in its ability to bring together more than 20 active individual professionals in construction industry; to understand client needs and offer proactive technical services that ensures quality delivery</p>
+                </header>
+                <div class="_row">
+                    <TeamCard
+                        :imageName="`Olusola-Matthew.jpg`"
+                        :staffName="`Olusola Matthew Orikoku`"
+                        :qualification="`OND, HND, PGD, MNIOB, CORBON, ANIM, Masters in Project Management`"
+                        :position="`Managing Director`"
+                    />
+
+                    <TeamCard
+                        :imageName="`Engr-Abraham-Olaolu.jpg`"
+                        :staffName="`Engr Abraham Olaolu Orikoku`"
+                        :qualification="`Bsc Civil Engr, COREN`"
+                        :position="`HSE Engineer`"
+                    />
+
+                    <TeamCard
+                        :imageName="`Orikoku-Opemipo.jpg`"
+                        :staffName="`Orikoku Opemipo Ebunola`"
+                        :qualification="`BSc. Accounting, MBA, ACA, ACCA, MSC (In view)`"
+                        :position="`Personnel & Internal Control Manager`"
+                    />
+
+                    <TeamCard
+                        :imageName="`Fajimi-Kayode-Paul.jpg`"
+                        :staffName="`Fajimi Kayode Paul`"
+                        :qualification="`Bsc Elect. Eng, MNSE, COREN`"
+                        :position="`Electrical Engr`"
+                    />
+                </div>
+
+                <div class="_row">
+                    <TeamCard
+                        :imageName="`Oguntola-Lateef-A.jpg`"
+                        :staffName="`Oguntola Lateef A`"
+                        :qualification="`OND (Building), Bsc (civil), COREN, NIStructE`"
+                        :position="`Structural Engineer`"
+                    />
+
+                    <TeamCard
+                        :imageName="`default.jpg`"
+                        :staffName="`Awoyinfa Titilayo`"
+                        :qualification="`Bsc Architecture (NIA, ARCON)`"
+                        :position="`Chief Architect`"
+                    />
+
+                    <TeamCard
+                        :imageName="`default.jpg`"
+                        :staffName="`Omosalewa Olukunga`"
+                        :qualification="`OND, HND, BTech Architecture`"
+                        :position="`Architect 1`"
+                    />
+
+                    <TeamCard
+                        :imageName="`default.jpg`"
+                        :staffName="`Omosalewa Olukunga`"
+                        :qualification="`OND, HND, BTech Architecture`"
+                        :position="`Architect 1`"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section id="affiliates">
+            <div class="ot-container">
+                <header>
+                    <h2>Professional bodies affiliation</h2>
+                    <p>The firm and or staff maintain regular and current subscriptions with the following professional bodies:</p>
+                </header>
+                <img src="~/assets/img/ontop-affiliations.png" />
+            </div>
+        </section>
+
+        <section id="equip">
+            <div class="ot-container">
+                <header>
+                    <h2>Plants and Equipments</h2>
+                    <p>We utilize computers extensively with the support of the following hardware and equipment:</p>
+                </header>
+                <div class="_row">
+                    <EquipCard 
+                        :equipImg="`Garmin-GPSIII.png`"
+                        :equipName="`Garmin GPSIII Global Positioning System Device`"
+                    />
+
+                    <EquipCard 
+                        :equipImg="`Wild-TC800.png`"
+                        :equipName="`Wild TC800 Total Station Surveying Instrument`"
+                    />
+
+                    <EquipCard 
+                        :equipImg="`Wild-12.png`"
+                        :equipName="`Wild T2 Theodolite`"
+                    />
+                </div>
             </div>
         </section>
 
@@ -162,7 +265,7 @@ export default {
     }
 }
 
-.deliver {
+#deliver {
     background-image: url('../assets/img/deliver.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,6 +293,78 @@ export default {
             font-size: 18px;
             line-height: 36px;
         }
+    }
+}
+
+#team {
+    margin: 150px 0;
+
+    & header {
+        max-width: 670px;
+        margin: auto;
+        text-align: center;
+
+        & h2 {
+            font-family: 'Aeonik TRIAL';
+            font-weight: 400;
+            font-size: 30px;
+            padding-bottom: 16px;
+        }
+    }
+
+    & ._row {
+        display: flex;
+        column-gap: 30px;
+        justify-content: space-between;
+        margin: 100px auto;
+        max-width: 1200px;
+    }
+}
+
+#affiliates {
+    margin: 150px 0;
+
+    & header {
+        max-width: 670px;
+        margin: auto;
+        text-align: center;
+
+        & h2 {
+            font-family: 'Aeonik TRIAL';
+            font-weight: 400;
+            font-size: 30px;
+            padding-bottom: 16px;
+        }
+    }
+
+    & img {
+        margin-top: 60px;
+        width: 100%;
+    }
+}
+
+#equip {
+    margin: 150px 0;
+
+    & header {
+        max-width: 670px;
+        margin: auto;
+        text-align: center;
+
+        & h2 {
+            font-family: 'Aeonik TRIAL';
+            font-weight: 400;
+            font-size: 30px;
+            padding-bottom: 16px;
+        }
+    }
+
+    & ._row {
+        display: flex;
+        column-gap: 30px;
+        justify-content: space-between;
+        margin: 100px auto;
+        max-width: 1200px;
     }
 }
 </style>
