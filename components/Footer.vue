@@ -8,10 +8,9 @@
             <div class="ft-info">
                 <div class="_link">
                     <ul>
-                        <li><router-link to="/">Our Services</router-link></li>
-                        <li><router-link to="/">Portfolio</router-link></li>
-                        <li><router-link to="/">About Us</router-link></li>
-                        <li><router-link to="/">Contact Us</router-link></li>
+                        <li v-for="(item, index) in items" :key="index">
+                            <router-link :to="item.url">{{item.menu}}</router-link>
+                        </li>
                     </ul>
                 </div>
                 <div class="_details">
@@ -37,7 +36,18 @@
 
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    data() {
+        return {
+            items: [
+                {'id': 0, 'menu': 'Our Services', 'url': '/#service'},
+                {'id': 1, 'menu': 'Portfolio', 'url': '/portfolio'},
+                {'id': 2, 'menu': 'About Us', 'url': '/about-us'},
+                {'id': 3, 'menu': 'Contact Us', 'url': '/contact-us'},
+                {'id': 4, 'menu': 'Policies', 'url': '/policies'},
+            ]
+        }
+    }
 }
 </script>
 
@@ -52,7 +62,7 @@ footer {
     justify-content: space-between;
     width: 90%;
     margin: auto;
-    padding: 3rem 0.9rem;
+    padding: 3rem 0.9rem 6rem;
     color: $ot-white;
     column-gap: 253px;
 }
@@ -69,7 +79,7 @@ footer {
     flex-direction: column;
 
     ._link {
-        width: 500px;
+        width: 608px;
         ul {
             display: flex;
             justify-content: space-between;

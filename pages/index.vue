@@ -64,7 +64,7 @@
       </div>
     </section>
 
-    <section class="service">
+    <section id="service">
       <h2>What we do</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo turpis consequat, commodo elementum ac eu id dictum.</p>
       <div class="_inner ot-container">
@@ -299,7 +299,7 @@ export default {
   }
 }
 
-.service {
+#service {
   padding: 150px 0;
 
   h2 {
