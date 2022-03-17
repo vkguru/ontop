@@ -5,7 +5,7 @@
                 <div class="text">
                     <h4>Our works</h4>
                     <h1>Portfolio</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi habitasse sit volutpat sit massa erat. Aliquam felis dui, est id.</p>
+                    <p>We pride ourselves in the delivery of industry standard projects. We follow international best practices to make this happen.</p>
                 </div>
 
                 <div class="img">

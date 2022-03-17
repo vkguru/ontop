@@ -3,7 +3,11 @@
     <section class="hero">
       <div class="hero-inner">
         <h1>We deliver projects that defies all Imitations</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo turpis consequat, commodo elementum ac eu id dictum. Dignissim vel viverra erat semper diam ornare volutpat. Id scelerisque ultricies consequat vitae, nisl enim. </p>
+        <p>
+          We have considerable experience in giving outstanding services in the areas of Real Estate Construction, and civil engineering services. We provide excellent consultancy and project
+          management expertise in the areas of Sales and procurement of building materials, construction of Borehole, Landscaping services, and importation of building materials amongst others. And we
+          have a depth of project type experience (schools, governmental, office, industrial, retail, parking structures, multi-unit residential on pile foundation, swimming pools, resorts among others) 
+        </p>
         <div class="_btns">
           <router-link to="contact-us" class="contact">Contact us</router-link>
           <router-link to="#service" class="service">Our services</router-link>
@@ -111,10 +115,10 @@
       <header class="ot-container">
         <div class="text">
           <h2>Our Most Recent Projects</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo turpis consequat, commodo elementum ac eu id dictum</p>
+          <p>We pride ourselves in the delivery of industry standard projects. We follow international best practices to make this happen.</p>
         </div>
         <div class="link">
-          <router-link to="/potfolio" class="ot-cta">View all projects</router-link>
+          <router-link to="/portfolio" class="ot-cta">View all projects</router-link>
         </div>
       </header>
     </section>
@@ -155,7 +159,7 @@ export default {
   }
 
   p {
-    width: 80%;
+    font-size: 18px;
     margin: auto;
   }
 }
