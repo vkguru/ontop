@@ -41,6 +41,7 @@ header {
         font-size: 36px;
         font-weight: 400;
         padding-bottom: 12px;
+        line-height: 40px;
     }
 
     & h4 {
@@ -72,4 +73,22 @@ header {
 //         // max-width: 1200px;
 //     }
 // }
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+    .works img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1208px) and (min-width: 769px) {
+    .works {
+        justify-content: start;
+
+        img {
+            width: 220px;
+        }
+    }
+}
 </style>

@@ -112,4 +112,24 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .metrics {
+        & span {
+            &:nth-child(2) {
+                margin-top: 250px;
+            }
+
+            &:nth-child(3) {
+                margin-top: 120px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+    }
+}
 </style>

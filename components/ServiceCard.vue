@@ -69,4 +69,16 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .service-card {
+        max-width: 47%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service-card {
+        max-width: 100%;
+    }
+}
 </style>

@@ -127,8 +127,32 @@
         </div>
       </header>
 
-      <div class="ot-container">
+      <div class="ot-container hid">
         <div class="row">
+          <PreviewProjects
+            :image="`supermarket.jpg`"
+            :title="`Supermarket`"
+            :location="`Prince Ebeano supermarket`"
+          />
+
+          <PreviewProjects
+            :image="`church-building.jpg`"
+            :title="`Church building`"
+            :location="`RCCG Maryland`"
+          />
+
+          <PreviewProjects
+            :image="`estate.jpg`"
+            :title="`Estate building construction`"
+            :location="`Osborne offshore estate`"
+          />
+
+          <PreviewProjects
+            :image="`estate.jpg`"
+            :title="`Estate building construction`"
+            :location="`Osborne offshore estate`"
+          />
+          <!---->
           <PreviewProjects
             :image="`supermarket.jpg`"
             :title="`Supermarket`"
@@ -180,8 +204,8 @@ export default {
 }
 
 .hero-inner {
-  padding: 25rem 0 15rem;
-  max-width: 900px;
+  padding: 25rem 3rem 15rem;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
   color: $ot-white;
@@ -239,10 +263,10 @@ export default {
   margin-bottom: 100px;
 
   ._inner {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 20px;
 
     h2 {
       font-size: 30px;
@@ -284,12 +308,12 @@ export default {
   }
 
   .img {
-    width: 40%;
+    max-width: 40%;
     position: relative;
 
-    #__ser {
-      width: 100%;
-    }
+    // #__ser {
+    //   width: 100%;
+    // }
 
     #__strip {
       position: absolute;
@@ -369,6 +393,12 @@ export default {
 
 .project {
   padding: 80px 0;
+
+  & .ot-container {
+      &.hid {
+        overflow: hidden;
+      }
+  }
   
   & header {
     display: flex;
@@ -383,6 +413,7 @@ export default {
         font-weight: 400;
         padding-bottom: 16px;
         font-size: 30px;
+        line-height: 40px;
       }
     }
 
@@ -397,6 +428,84 @@ export default {
     column-gap: 30px;
     margin: 50px 0;
     max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 16px !important;
+  }
+
+  .hero-inner {
+    padding: 16rem 1.58rem 8rem;
+
+    & h1 {
+      font-size: 3rem;
+      line-height: 60px;
+    }
+  }
+
+  .about {
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  .why {
+    & ._inner {
+      text-align: center;
+      flex-direction: column;
+      & .img {
+        display: none;
+      }
+      & .text {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        & ._card {
+          max-width: 100%;
+          & .content {
+            padding-bottom: 0;
+          }
+
+          &:nth-child(4) {
+              .content {
+                padding-top: 30px;
+              }
+          }
+
+          &.top {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #service {
+    padding: 0 20px;
+  }
+
+  .project {
+    .ot-container {
+      flex-direction: column;
+      .text {
+        max-width: 100%;
+      }
+      .link {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  ._btns {
+    flex-direction: column;
+
+    .contact {
+      margin-bottom: 20px;
+    }
   }
 }
 </style>

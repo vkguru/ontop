@@ -196,4 +196,34 @@ section {
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    .hero {
+        ._inner {
+            flex-direction: column;
+            width: 90%;
+            margin-right: auto;
+
+            .text {
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 60px;
+                }
+
+                ._info {
+                    left: -35px;
+                    bottom: -150px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
 </style>

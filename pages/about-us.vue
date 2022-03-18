@@ -367,4 +367,65 @@ export default {
         max-width: 1200px;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .hero {
+        ._inner {
+            flex-direction: column;
+            width: 90%;
+            margin-right: auto;
+
+            .text {
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 60px;
+                }
+
+                ._info {
+                    left: -35px;
+                    bottom: -150px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1108px) and (min-width: 600px) {
+    #team ._row {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .hero #radia {
+        display: none;
+    }
+
+    #team ._row {
+        flex-direction: column;
+    }
+
+    #equip ._row {
+        flex-direction: column;
+    }
+
+    #deliver {
+        padding: 150px 50px;
+        height: auto;
+    }
+
+    #deliver ._inner h2 {
+        line-height: 70px;
+    }
+}
+
 </style>

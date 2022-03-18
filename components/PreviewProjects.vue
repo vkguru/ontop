@@ -23,9 +23,9 @@ export default {
 .project_ {
     width: 320px;
 
-    & img {
-        width: 100%;
-    }
+    // & img {
+    //     width: 100%;
+    // }
 
     & .content {
         padding: 20px 0;

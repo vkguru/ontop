@@ -287,4 +287,62 @@ export default {
         max-width: 1200px;
     }
 }
+
+@media screen and (max-width: 1220px) and (min-width: 500px) {
+    .hero .img .metrics {
+        left: 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        ._inner {
+            flex-direction: column;
+            width: 90%;
+            margin-right: auto;
+
+            .text {
+                max-width: 100%;
+                margin-bottom: 30px;
+
+                .contact-card {
+                    max-width: 100%;
+                }
+            }
+
+            .img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 60px;
+                }
+
+                ._info {
+                    left: -35px;
+                    bottom: -150px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #equip ._row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    .hero .img .metrics {
+        display: none;
+    }
+
+    .text {
+        h1 {
+            line-height: 50px;
+        }
+    }
+}
 </style>

@@ -32,4 +32,10 @@ export default {
         line-height: 30px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .equip-card {
+        max-width: 100%;
+    }
+}
 </style>

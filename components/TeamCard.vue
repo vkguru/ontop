@@ -48,4 +48,14 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .team-card {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
 </style>

@@ -128,4 +128,13 @@ export default {
 .content {
     width: 80%;
 }
+
+@media screen and (max-width: 1280px) {
+    .hero ._inner .text {
+        h1 {
+            line-height: 50px;
+            font-size: 3rem;
+        }
+    }
+}
 </style>
