@@ -145,3 +145,9 @@ section {
     font-size: 16px !important;
   }
 } */
+
+@media screen and (max-width: 600px) {
+  .policy h3 {
+    line-height: 40px;
+  }
+}

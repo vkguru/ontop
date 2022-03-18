@@ -137,4 +137,38 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .tab-content {
+        flex-direction: column;
+    }
+
+    .tab {
+        max-width: 100%;
+        overflow: scroll;
+        margin-bottom: 30px;
+
+        ul {
+            display: flex;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 3px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+    }
+
+    .content {
+        width: 100%;
+    }
+}
 </style>

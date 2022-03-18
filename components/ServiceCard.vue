@@ -26,7 +26,7 @@ export default {
 .service-card {
     position: relative;
     display: flex;
-    max-width: 370px;
+    max-width: 360px;
     width: 100%;
 
     img {
