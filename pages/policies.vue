@@ -35,6 +35,7 @@
 export default {
     data() {
         return {
+            title: 'Policies | Ontop Builders',
             tabs: [
                 'Safety Policy statement',
                 'Health Policy',
@@ -47,6 +48,11 @@ export default {
             selectedIndex: 0,
             displayIndex: 0
         }
+    },
+    head() {
+      return {
+        title: this.title
+      }
     },
     created () {
         

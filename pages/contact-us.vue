@@ -117,7 +117,16 @@
 
 <script>
 export default {
-    
+    data() {
+      return {
+        title: 'Contact Us | Ontop Builders'
+      }
+    },
+    head() {
+      return {
+        title: this.title
+      }
+    }
 }
 </script>
 
@@ -329,8 +338,16 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
+    .hero {
+        margin-bottom: 0;
+    }
+    
     #equip ._row {
         flex-direction: column;
+    }
+
+    #affiliates {
+        margin: 0;
     }
 }
 

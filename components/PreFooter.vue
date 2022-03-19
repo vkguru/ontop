@@ -114,7 +114,11 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+    .preft {
+        padding: 0 0 80px;
+    }
     .metrics {
+        margin-top: 50px;
         & span {
             &:nth-child(2) {
                 margin-top: 250px;

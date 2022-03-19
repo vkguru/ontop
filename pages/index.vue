@@ -487,6 +487,7 @@ export default {
   }
 
   .project {
+    padding: 80px 0 0;
     .ot-container {
       flex-direction: column;
       .text {

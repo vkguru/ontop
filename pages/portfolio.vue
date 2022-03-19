@@ -86,6 +86,7 @@
 export default {
     data() {
         return {
+            title: 'Portfolio | Ontop Builders',
             gbagada: [
                 'gb-one.jpg',
                 'gb-two.jpg',
@@ -117,6 +118,11 @@ export default {
                 'pe-four.jpg',
             ]
         }
+    },
+    head() {
+      return {
+        title: this.title
+      }
     }
 }
 </script>

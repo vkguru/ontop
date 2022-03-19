@@ -61,7 +61,7 @@
                     <li v-for="(item, index) in items" :key="index" @click="reveal">
                         <nuxt-link :to="item.url">{{item.menu}}</nuxt-link>
                     </li>
-                    <li><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
+                    <li @click="reveal"><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
                 </ul>
             </div>
         </div>

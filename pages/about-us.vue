@@ -156,7 +156,16 @@
 
 <script>
 export default {
-    
+    data() {
+      return {
+        title: 'About Us | Ontop Builders'
+      }
+    },
+    head() {
+      return {
+        title: this.title
+      }
+    }
 }
 </script>
 
