@@ -129,54 +129,12 @@
 
       <div class="ot-container hid">
         <div class="row">
-          <PreviewProjects
-            :image="`supermarket.jpg`"
-            :title="`Supermarket`"
-            :location="`Prince Ebeano supermarket`"
+          <PreviewProjects v-for="(project, index) in projects"
+            :key="index"
+            :image="project.img"
+            :title="project.title"
+            :location="project.location"
           />
-
-          <PreviewProjects
-            :image="`church-building.jpg`"
-            :title="`Church building`"
-            :location="`RCCG Maryland`"
-          />
-
-          <PreviewProjects
-            :image="`estate.jpg`"
-            :title="`Estate building construction`"
-            :location="`Osborne offshore estate`"
-          />
-
-          <PreviewProjects
-            :image="`estate.jpg`"
-            :title="`Estate building construction`"
-            :location="`Osborne offshore estate`"
-          />
-          <!---->
-          <PreviewProjects
-            :image="`supermarket.jpg`"
-            :title="`Supermarket`"
-            :location="`Prince Ebeano supermarket`"
-          />
-
-          <PreviewProjects
-            :image="`church-building.jpg`"
-            :title="`Church building`"
-            :location="`RCCG Maryland`"
-          />
-
-          <PreviewProjects
-            :image="`estate.jpg`"
-            :title="`Estate building construction`"
-            :location="`Osborne offshore estate`"
-          />
-
-          <PreviewProjects
-            :image="`estate.jpg`"
-            :title="`Estate building construction`"
-            :location="`Osborne offshore estate`"
-          />
-          
         </div>
       </div>
     </section>
@@ -191,6 +149,20 @@
 export default {
   layout: 'light',
   components: {},
+  data() {
+    return {
+      projects: [
+        {img: 'supermarket.jpg', title: 'Supermarket', location: 'Prince Ebeano supermarket'},
+        {img: 'church-building.jpg', title: 'Church building', location: 'RCCG Maryland'},
+        {img: 'estate.jpg', title: 'Estate building construction', location: 'Osborne offshore estate'},
+        {img: 'supermarket.jpg', title: 'Supermarket', location: 'Prince Ebeano supermarket'},
+        {img: 'church-building.jpg', title: 'Church building', location: 'RCCG Maryland'},
+        {img: 'estate.jpg', title: 'Estate building construction', location: 'Osborne offshore estate'},
+        {img: 'supermarket.jpg', title: 'Supermarket', location: 'Prince Ebeano supermarket'},
+        {img: 'church-building.jpg', title: 'Church building', location: 'RCCG Maryland'}
+      ]
+    }
+  }
 }
 </script>
 
