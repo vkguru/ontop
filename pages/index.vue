@@ -19,7 +19,7 @@
       <div class="_inner">
         <h2>Who we are</h2>
         <p>We are a construction and project management company in Nigeria, which was incorporated to carry on the business of building construction, project management, construction management and facility management, design/build of first class building and other civil engineering services, consulting and general contracting services to clients in both the public and private sectors.</p>
-        <router-link to="#" class="ot-cta">More about us</router-link>
+        <router-link to="/about-us" class="ot-cta">More about us</router-link>
       </div>
     </section>
 
@@ -127,16 +127,25 @@
         </div>
       </header>
 
-      <div class="ot-container hid">
-        <div class="row">
-          <PreviewProjects v-for="(project, index) in projects"
-            :key="index"
-            :image="project.img"
-            :title="project.title"
-            :location="project.location"
-          />
+      <div class="ot-container">
+        <div class="ctrl lt">
+          <img src="~/assets/img/arrow-right.png" @click="moveCarousel(-1)" />
+        </div>
+        <div class="hid">
+          <div class="row" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
+            <PreviewProjects v-for="(project, index) in projects"
+              :key="index"
+              :image="project.img"
+              :title="project.title"
+              :location="project.location"
+            />
+          </div>
+        </div>
+        <div class="ctrl rt">
+          <img src="~/assets/img/arrow-right.png" @click="moveCarousel(1)" />
         </div>
       </div>
+      
     </section>
 
     <section>
@@ -160,7 +169,28 @@ export default {
         {img: 'estate.jpg', title: 'Estate building construction', location: 'Osborne offshore estate'},
         {img: 'supermarket.jpg', title: 'Supermarket', location: 'Prince Ebeano supermarket'},
         {img: 'church-building.jpg', title: 'Church building', location: 'RCCG Maryland'}
-      ]
+      ],
+      currentOffset: 0,
+      windowSize: 3,
+      paginationFactor: 220,
+    }
+  },
+  computed: {
+    atEndOfList() {
+      return this.currentOffset <= (this.paginationFactor * -1) * (this.projects.length - this.windowSize);
+    },
+    atHeadOfList() {
+      return this.currentOffset === 0;
+    },
+  },
+  methods: {
+    moveCarousel(direction) {
+      // Find a more elegant way to express the :style. consider using props to make it truly generic
+      if (direction === 1 && !this.atEndOfList) {
+        this.currentOffset -= this.paginationFactor;
+      } else if (direction === -1 && !this.atHeadOfList) {
+        this.currentOffset += this.paginationFactor;
+      }
     }
   }
 }
@@ -367,8 +397,32 @@ export default {
   padding: 80px 0;
 
   & .ot-container {
-      &.hid {
-        overflow: hidden;
+      position: relative;
+      & .hid {
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+      }
+
+      & .ctrl {
+        position: absolute;
+        top: 170px;
+        z-index: 9;
+
+        & img {
+          cursor: pointer;
+        }
+
+        &.rt {
+          right: 0;
+        }
+
+        &.lt {
+          transform: rotate(180deg);
+        }
       }
   }
   
