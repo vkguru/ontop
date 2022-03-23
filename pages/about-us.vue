@@ -57,6 +57,7 @@
                         :staffName="`Olusola Matthew Orikoku`"
                         :qualification="`OND, HND, PGD, MNIOB, CORBON, ANIM, Masters in Project Management`"
                         :position="`Managing Director`"
+                        :staffBio="bio[0]"
                     />
 
                     <TeamCard
@@ -64,6 +65,7 @@
                         :staffName="`Engr Abraham Olaolu Orikoku`"
                         :qualification="`Bsc Civil Engr, COREN`"
                         :position="`HSE Engineer`"
+                        :staffBio="bio[1]"
                     />
 
                     <TeamCard
@@ -155,16 +157,28 @@
 </template>
 
 <script>
+import data from "@/dummy/staffbio.json";
+
 export default {
     data() {
       return {
-        title: 'About Us | Ontop Builders'
+        title: 'About Us | Ontop Builders',
+        bio: []
       }
     },
     head() {
       return {
         title: this.title
       }
+    },
+    mounted() {
+        this.loadBios();
+    },
+    methods: {
+        loadBios() {
+            this.bio = data;
+            console.log(this.bio[0])
+        }
     }
 }
 </script>
