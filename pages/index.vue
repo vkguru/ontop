@@ -454,6 +454,7 @@ export default {
     column-gap: 30px;
     margin: 50px 0;
     max-width: 1200px;
+    transition: 0.5s ease-in-out;
   }
 }
 
