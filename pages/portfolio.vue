@@ -26,7 +26,6 @@
                 <PortfolioCard
                     :title="`Building construction`"
                     :location="`Gbagada`"
-                    :description="`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi habitasse sit volutpat sit massa erat. Aliquam felis dui, est id. Cursus orci magna in lectus mi consectetur eros tellus. Ante orci sed nibh vel scelerisque lacus, elit id.`"
                     :images="gbagada"
                 />
             </div>
@@ -37,7 +36,6 @@
                 <PortfolioCard
                     :title="`Building construction`"
                     :location="`Osborne offshore estate`"
-                    :description="`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi habitasse sit volutpat sit massa erat. Aliquam felis dui, est id. Cursus orci magna in lectus mi consectetur eros tellus. Ante orci sed nibh vel scelerisque lacus, elit id.`"
                     :images="osborne"
                 />
             </div>
@@ -48,7 +46,6 @@
                 <PortfolioCard
                     :title="`Multi purpose hall`"
                     :location="`Maryland Catholic secondary school`"
-                    :description="`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi habitasse sit volutpat sit massa erat. Aliquam felis dui, est id. Cursus orci magna in lectus mi consectetur eros tellus. Ante orci sed nibh vel scelerisque lacus, elit id.`"
                     :images="maryland"
                 />
             </div>
@@ -59,7 +56,6 @@
                 <PortfolioCard
                     :title="`Building construction`"
                     :location="`Magboro`"
-                    :description="`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi habitasse sit volutpat sit massa erat. Aliquam felis dui, est id. Cursus orci magna in lectus mi consectetur eros tellus. Ante orci sed nibh vel scelerisque lacus, elit id.`"
                     :images="magboro"
                 />
             </div>
@@ -70,7 +66,6 @@
                 <PortfolioCard
                     :title="`Supermarket building`"
                     :location="`Prince Ebeano supermarket`"
-                    :description="`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi habitasse sit volutpat sit massa erat. Aliquam felis dui, est id. Cursus orci magna in lectus mi consectetur eros tellus. Ante orci sed nibh vel scelerisque lacus, elit id.`"
                     :images="ebeano"
                 />
             </div>
