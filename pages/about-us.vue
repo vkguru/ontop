@@ -92,6 +92,13 @@
                     />
 
                     <TeamCard
+                        :imageName="`amos-adebowale.jpg`"
+                        :staffName="`Adebowale Amos Adediran`"
+                        :qualification="`OND, HND(Building) PGD (Construction Management) CORBON`"
+                        :position="`Program Coordinator`"
+                    />
+
+                    <TeamCard
                         :imageName="`default.jpg`"
                         :staffName="`Awoyinfa Titilayo`"
                         :qualification="`Bsc Architecture (NIA, ARCON)`"
@@ -100,16 +107,9 @@
 
                     <TeamCard
                         :imageName="`default.jpg`"
-                        :staffName="`Omosalewa Olukunga`"
-                        :qualification="`OND, HND, BTech Architecture`"
-                        :position="`Architect 1`"
-                    />
-
-                    <TeamCard
-                        :imageName="`default.jpg`"
-                        :staffName="`Omosalewa Olukunga`"
-                        :qualification="`OND, HND, BTech Architecture`"
-                        :position="`Architect 1`"
+                        :staffName="`Tijani Waliu`"
+                        :qualification="`OND, HND(Building), MNIOB, CORBON`"
+                        :position="`Chief Builder`"
                     />
                 </div>
             </div>
