@@ -79,17 +79,17 @@
       <div class="_inner ot-container">
         <ServiceCard 
           :title="`Building construction`"
-          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :info="`We follow best practices in all our building projects. We can handle any kind of projects regardless of the size`" 
           :img="`building-construction.png`" 
         />
         <ServiceCard 
           :title="`Roads & Drainage`"
-          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :info="`We build roads and drainages that are qualid and durable.`" 
           :img="`roads-drainages.png`" 
         />
         <ServiceCard 
           :title="`City infrastructure & civil engineering works`"
-          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :info="`Our team of professionals are experts in designing and developing quality infrastructures and engineering works`" 
           :img="`city-infrastructure.png`" 
         />
         <ServiceCard 
@@ -99,18 +99,18 @@
         />
         <ServiceCard 
           :title="`Project management & procurement`"
-          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :info="`Our project management and procurement approach is second to none in the industry`" 
           :img="`project-management.png`" 
         />
         <ServiceCard 
           :title="`International trade Logistics`"
-          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :info="`We provide international trade logistics`" 
           :img="`international-logistics.png`" 
         />
         
         <ServiceCard 
           :title="`Real Estate Development`"
-          :info="`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`" 
+          :info="`We pride ourselves with our robust knowledge in the Real Estate sector to develop quality projects`" 
           :img="`Real-estate-development.png`" 
         />
       </div>
