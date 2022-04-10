@@ -15,7 +15,12 @@ export default {
       { 
         hid: 'description', 
         name: 'description', 
-        content: 'We are a construction and project management company in Nigeria, which was incorporated to carry on the business of building construction, project management, construction management and facility management, design/build of first class building and other civil engineering services, consulting and general contracting services to clients in both the public and private sectors.' 
+        content: 'We are a construction and project management company in Nigeria, which was incorporated to carry on the business of building construction, project management, construction management and facility management, design/build first class building and other civil engineering services, consulting and general contracting services to clients in both the public and private sectors.' 
+      },
+      { 
+        hid: 'keywords', 
+        name: 'keywords', 
+        content: 'construction and project management company in Nigeria, building construction, project management, construction management and facility management, design/build first class building and other civil engineering services, consulting and general contracting services to clients in both the public and private sectors.' 
       },
       { name: 'format-detection', content: 'telephone=no' }
     ],

@@ -5,7 +5,7 @@
         <h1>We deliver projects that defies all Imitations</h1>
         <p>
           We have considerable experience in giving outstanding services in the areas of Real Estate Construction, and civil engineering services. We provide excellent consultancy and project
-          management expertise in the areas of Sales and procurement of building materials, construction of Borehole, Landscaping services, and importation of building materials amongst others. And we
+          management expertise in the areas of Sales and procurement of building materials, construction of Borehole, Landscaping services, and importation of building materials amongst others. We
           have a depth of project type experience (schools, governmental, office, industrial, retail, parking structures, multi-unit residential on pile foundation, swimming pools, resorts among others) 
         </p>
         <div class="_btns">
