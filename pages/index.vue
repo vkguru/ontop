@@ -4,9 +4,15 @@
       <div class="hero-inner">
         <h1>We deliver projects that defies all Imitations</h1>
         <p>
-          We have considerable experience in giving outstanding services in the areas of Real Estate Construction, and civil engineering services. We provide excellent consultancy and project
-          management expertise in the areas of Sales and procurement of building materials, construction of Borehole, Landscaping services, and importation of building materials amongst others. We
-          have a depth of project type experience (schools, governmental, office, industrial, retail, parking structures, multi-unit residential on pile foundation, swimming pools, resorts among others) 
+          We have considerable experience in giving outstanding services in the
+          areas of Real Estate Construction, and civil engineering services. We
+          provide excellent consultancy and project management expertise in the
+          areas of Sales and procurement of building materials, construction of
+          Borehole, Landscaping services, and importation of building materials
+          amongst others. We have a depth of project type experience (schools,
+          governmental, office, industrial, retail, parking structures,
+          multi-unit residential on pile foundation, swimming pools, resorts
+          among others)
         </p>
         <div class="_btns">
           <router-link to="contact-us" class="contact">Contact us</router-link>
@@ -18,16 +24,27 @@
     <section class="about">
       <div class="_inner">
         <h2>Who we are</h2>
-        <p>We are a construction and project management company in Nigeria, which was incorporated to carry on the business of building construction, project management, construction management and facility management, design/build of first class building and other civil engineering services, consulting and general contracting services to clients in both the public and private sectors.</p>
+        <p>
+          We are a construction and project management company in Nigeria, which
+          was incorporated to carry on the business of building construction,
+          project management, construction management and facility management,
+          design/build of first class building and other civil engineering
+          services, consulting and general contracting services to clients in
+          both the public and private sectors.
+        </p>
         <router-link to="/about-us" class="ot-cta">More about us</router-link>
       </div>
     </section>
 
     <section class="why">
-      <h2>Why Ontop builders?</h2>
+      <h2>Why Ontop Builders?</h2>
       <div class="_inner">
         <div class="img">
-          <img id="__ser" src="~/assets/img/ontop-services.png" alt="two construction engineers on a project" />
+          <img
+            id="__ser"
+            src="~/assets/img/ontop-services.png"
+            alt="two construction engineers on a project"
+          />
           <div id="__strip">
             <img src="~/assets/img/service-stripe.png" alt="multiple stripes" />
           </div>
@@ -37,7 +54,10 @@
             <div class="content">
               <img src="~/assets/img/safety.png" alt="safety icon" />
               <h3>Safety</h3>
-              <p>We recognize the paramount importance of the safety of our employees, clients and the general public.</p>
+              <p>
+                We recognize the paramount importance of the safety of our
+                employees, clients and the general public.
+              </p>
             </div>
           </div>
 
@@ -45,7 +65,11 @@
             <div class="content">
               <img src="~/assets/img/environment.png" alt="environment icon" />
               <h3>Environmental protection</h3>
-              <p>We recognize the paramount importance of the protection of the environment, and pay key attention to it during the course of carrying out our business or operations.</p>
+              <p>
+                We recognize the paramount importance of the protection of the
+                environment, and pay key attention to it during the course of
+                carrying out our business or operations.
+              </p>
             </div>
           </div>
 
@@ -53,7 +77,11 @@
             <div class="content">
               <img src="~/assets/img/standard.png" alt="standard" />
               <h3>Standard</h3>
-              <p>We ensure that all aspects of our operations comply with our clients’ standards as well as all Government rules and regulations affecting our business and operations.</p>
+              <p>
+                We ensure that all aspects of our operations comply with our
+                clients’ standards as well as all Government rules and
+                regulations affecting our business and operations.
+              </p>
             </div>
           </div>
 
@@ -61,7 +89,11 @@
             <div class="content">
               <img src="~/assets/img/quality.png" alt="quality" />
               <h3>Quality</h3>
-              <p>We understands the Quality Assurance requirements of our clients and are totally committed to quality in completion and cost as primary objectives.</p>
+              <p>
+                We understand the Quality Assurance requirements of our clients
+                and are totally committed to quality in completion and cost as
+                primary objectives.
+              </p>
             </div>
           </div>
         </div>
@@ -71,47 +103,50 @@
     <section id="service">
       <h2>What we do</h2>
       <p>
-        The strength of this company is in its ability to bring together more than 20 active individual professionals in the 
-        construction industry which includes a former project manager of a multinational company in Qatar, professional Site 
-        Engineers, Civil Engineers, Senior Architect, and Quality Surveyor, and a Chartered Accountant all with many years of 
-        experience in their chosen field. Here are our areas of expertise, and what we offer
+        The strength of this company is in its ability to bring together more
+        than 20 active individual professionals in the construction industry
+        which includes a former project manager of a multinational company in
+        Qatar, professional Site Engineers, Civil Engineers, Senior Architect,
+        and Quality Surveyor, and a Chartered Accountant all with many years of
+        experience in their chosen field. Here are our areas of expertise, and
+        what we offer
       </p>
       <div class="_inner ot-container">
-        <ServiceCard 
+        <ServiceCard
           :title="`Building construction`"
-          :info="`We follow best practices in all our building projects. We can handle any kind of projects regardless of the size`" 
-          :img="`building-construction.png`" 
+          :info="`We follow best practices in all our building projects. We can handle any kind of projects regardless of the size`"
+          :img="`building-construction.png`"
         />
-        <ServiceCard 
+        <ServiceCard
           :title="`Roads & Drainage`"
-          :info="`We build roads and drainages that are qualid and durable.`" 
-          :img="`roads-drainages.png`" 
+          :info="`We build roads and drainages that are qualid and durable.`"
+          :img="`roads-drainages.png`"
         />
-        <ServiceCard 
+        <ServiceCard
           :title="`City infrastructure & civil engineering works`"
-          :info="`Our team of professionals are experts in designing and developing quality infrastructures and engineering works`" 
-          :img="`city-infrastructure.png`" 
+          :info="`Our team of professionals are experts in designing and developing quality infrastructures and engineering works`"
+          :img="`city-infrastructure.png`"
         />
-        <ServiceCard 
+        <ServiceCard
           :title="`Architectural & structural designs`"
-          :info="`Architectural designs includes; Production of working drawing for buildings, factories, office blocks, residential apartments, hotels, schools, hostels, hospitals, landscaping services and so on.`" 
-          :img="`arch-design.png`" 
+          :info="`Architectural designs includes; Production of working drawing for buildings, factories, office blocks, residential apartments, hotels, schools, hostels, hospitals, landscaping services and so on.`"
+          :img="`arch-design.png`"
         />
-        <ServiceCard 
+        <ServiceCard
           :title="`Project management & procurement`"
-          :info="`Our project management and procurement approach is second to none in the industry`" 
-          :img="`project-management.png`" 
+          :info="`Our project management and procurement approach is second to none in the industry`"
+          :img="`project-management.png`"
         />
-        <ServiceCard 
+        <ServiceCard
           :title="`International trade Logistics`"
-          :info="`We provide international trade logistics`" 
-          :img="`international-logistics.png`" 
+          :info="`We provide international trade logistics`"
+          :img="`international-logistics.png`"
         />
-        
-        <ServiceCard 
+
+        <ServiceCard
           :title="`Real Estate Development`"
-          :info="`We pride ourselves with our robust knowledge in the Real Estate sector to develop quality projects`" 
-          :img="`Real-estate-development.png`" 
+          :info="`We pride ourselves with our robust knowledge in the Real Estate sector to develop quality projects`"
+          :img="`Real-estate-development.png`"
         />
       </div>
     </section>
@@ -120,10 +155,15 @@
       <header class="ot-container">
         <div class="text">
           <h2>Our Most Recent Projects</h2>
-          <p>We pride ourselves in the delivery of industry standard projects. We follow international best practices to make this happen.</p>
+          <p>
+            We pride ourselves in the delivery of industry standard projects. We
+            follow international best practices to make this happen.
+          </p>
         </div>
         <div class="link">
-          <router-link to="/portfolio" class="ot-cta">View all projects</router-link>
+          <router-link to="/portfolio" class="ot-cta"
+            >View all projects</router-link
+          >
         </div>
       </header>
 
@@ -132,8 +172,14 @@
           <img src="~/assets/img/arrow-right.png" @click="moveCarousel(-1)" />
         </div>
         <div class="hid">
-          <div class="row" :style="{ transform: 'translateX' + '(' + currentOffset + 'px' + ')'}">
-            <PreviewProjects v-for="(project, index) in projects"
+          <div
+            class="row"
+            :style="{
+              transform: 'translateX' + '(' + currentOffset + 'px' + ')',
+            }"
+          >
+            <PreviewProjects
+              v-for="(project, index) in projects"
               :key="index"
               :image="project.img"
               :title="project.title"
@@ -145,7 +191,6 @@
           <img src="~/assets/img/arrow-right.png" @click="moveCarousel(1)" />
         </div>
       </div>
-      
     </section>
 
     <section>
@@ -156,28 +201,63 @@
 
 <script>
 export default {
-  layout: 'light',
+  layout: "light",
   components: {},
   data() {
     return {
       projects: [
-        {img: 'supermarket.jpg', title: 'Supermarket', location: 'Prince Ebeano supermarket'},
-        {img: 'church-building.jpg', title: 'Church building', location: 'RCCG Maryland'},
-        {img: 'estate.jpg', title: 'Estate building construction', location: 'Osborne offshore estate'},
-        {img: 'supermarket.jpg', title: 'Supermarket', location: 'Prince Ebeano supermarket'},
-        {img: 'church-building.jpg', title: 'Church building', location: 'RCCG Maryland'},
-        {img: 'estate.jpg', title: 'Estate building construction', location: 'Osborne offshore estate'},
-        {img: 'supermarket.jpg', title: 'Supermarket', location: 'Prince Ebeano supermarket'},
-        {img: 'church-building.jpg', title: 'Church building', location: 'RCCG Maryland'}
+        {
+          img: "supermarket.jpg",
+          title: "Supermarket",
+          location: "Prince Ebeano supermarket",
+        },
+        {
+          img: "church-building.jpg",
+          title: "Church building",
+          location: "RCCG Maryland",
+        },
+        {
+          img: "estate.jpg",
+          title: "Estate building construction",
+          location: "Osborne offshore estate",
+        },
+        {
+          img: "supermarket.jpg",
+          title: "Supermarket",
+          location: "Prince Ebeano supermarket",
+        },
+        {
+          img: "church-building.jpg",
+          title: "Church building",
+          location: "RCCG Maryland",
+        },
+        {
+          img: "estate.jpg",
+          title: "Estate building construction",
+          location: "Osborne offshore estate",
+        },
+        {
+          img: "supermarket.jpg",
+          title: "Supermarket",
+          location: "Prince Ebeano supermarket",
+        },
+        {
+          img: "church-building.jpg",
+          title: "Church building",
+          location: "RCCG Maryland",
+        },
       ],
       currentOffset: 0,
       windowSize: 3,
       paginationFactor: 220,
-    }
+    };
   },
   computed: {
     atEndOfList() {
-      return this.currentOffset <= (this.paginationFactor * -1) * (this.projects.length - this.windowSize);
+      return (
+        this.currentOffset <=
+        this.paginationFactor * -1 * (this.projects.length - this.windowSize)
+      );
     },
     atHeadOfList() {
       return this.currentOffset === 0;
@@ -191,14 +271,14 @@ export default {
       } else if (direction === -1 && !this.atHeadOfList) {
         this.currentOffset += this.paginationFactor;
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .hero {
-  background-image: url('../assets/img/hero-img.jpg');
+  background-image: url("../assets/img/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -257,7 +337,7 @@ export default {
 }
 
 .about {
-  background-image: url('../assets/img/about-line-art.png');
+  background-image: url("../assets/img/about-line-art.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -342,11 +422,11 @@ export default {
       &.top {
         margin-bottom: 50px;
         &::after {
-          content: '';
+          content: "";
           display: block;
           height: 2px;
           width: 55%;
-          background-color: #C4C4C4;
+          background-color: #c4c4c4;
           opacity: 0.3;
         }
       }
@@ -367,65 +447,65 @@ export default {
   padding: 150px 0;
 
   h2 {
-      font-size: 30px;
-      font-family: "Aeonik TRIAL";
-      font-weight: 400;
-      padding-bottom: 16px;
-      text-align: center;
-    }
+    font-size: 30px;
+    font-family: "Aeonik TRIAL";
+    font-weight: 400;
+    padding-bottom: 16px;
+    text-align: center;
+  }
 
-    p {
-      font-size: 18px;
-      padding-bottom: 60px;
-      line-height: 29px;
-      text-align: center;
-      max-width: 870px;
-      margin: auto;
-    }
+  p {
+    font-size: 18px;
+    padding-bottom: 60px;
+    line-height: 29px;
+    text-align: center;
+    max-width: 870px;
+    margin: auto;
+  }
 
-    ._inner {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: wrap;
-      column-gap: 35px;
-      grid-row-gap: 35px;
-    }
+  ._inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    grid-row-gap: 35px;
+  }
 }
 
 .project {
   padding: 80px 0;
 
   & .ot-container {
-      position: relative;
-      & .hid {
-        overflow: scroll;
+    position: relative;
+    & .hid {
+      overflow: scroll;
 
-        &::-webkit-scrollbar {
-            width: 0;
-            height: 0;
-        }
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    & .ctrl {
+      position: absolute;
+      top: 170px;
+      z-index: 9;
+
+      & img {
+        cursor: pointer;
       }
 
-      & .ctrl {
-        position: absolute;
-        top: 170px;
-        z-index: 9;
-
-        & img {
-          cursor: pointer;
-        }
-
-        &.rt {
-          right: 0;
-        }
-
-        &.lt {
-          transform: rotate(180deg);
-        }
+      &.rt {
+        right: 0;
       }
+
+      &.lt {
+        transform: rotate(180deg);
+      }
+    }
   }
-  
+
   & header {
     display: flex;
     justify-content: space-between;
@@ -494,9 +574,9 @@ export default {
           }
 
           &:nth-child(4) {
-              .content {
-                padding-top: 30px;
-              }
+            .content {
+              padding-top: 30px;
+            }
           }
 
           &.top {
