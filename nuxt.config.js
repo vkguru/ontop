@@ -22,6 +22,10 @@ export default {
         name: 'keywords', 
         content: 'construction and project management company in Nigeria, building construction, project management, construction management and facility management, design/build first class building and other civil engineering services, consulting and general contracting services to clients in both the public and private sectors.' 
       },
+      {
+        name: "google-site-verification", 
+        content: "nJlxJXUm81VRce-VQ-4-E0Skf0yZLbUbc6Zjbn9us1w"
+      },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
